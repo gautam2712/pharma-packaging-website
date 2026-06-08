@@ -1,0 +1,232 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast / Enterprise Corporate)",
+  "colors": {
+    "primary": "#003B5C",
+    "primary_hover": "#002840",
+    "secondary": "#4B5563",
+    "background": "#FFFFFF",
+    "surface": "#F3F4F6",
+    "surface_alt": "#E5E7EB",
+    "accent": "#9CA3AF",
+    "success": "#00A36C",
+    "text_primary": "#111827",
+    "text_secondary": "#4B5563",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "headings": "IBM Plex Sans",
+    "body": "Karla",
+    "mono": "IBM Plex Mono",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#003B5C]",
+    "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#003B5C]",
+    "h3": "text-xl sm:text-2xl font-semibold text-gray-900",
+    "body_text": "text-base leading-relaxed text-[#4B5563]"
+  },
+  "layout": {
+    "spacing_system": "Generous spacing. p-8 to p-24 for sections. Use grid layout for products and stats.",
+    "border_radius": "rounded-sm (small radius for industrial feel)",
+    "shadows": "shadow-sm for subtle elevation, avoid large soft shadows to maintain a strict corporate look."
+  },
+  "motion": {
+    "hover": "Subtle translate-y-1 and shadow enhancement on product cards. Slow ease-in-out.",
+    "page_transitions": "Fade in and slide up for sections using motion.div.",
+    "scroll": "Smooth scrolling for anchor links."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#003B5C] text-white hover:bg-[#002840] rounded-sm px-6 py-3 font-semibold transition-colors",
+      "secondary": "border-2 border-[#4B5563] text-[#4B5563] hover:bg-[#4B5563] hover:text-white rounded-sm px-6 py-3 font-semibold transition-colors",
+      "accent": "bg-[#00A36C] text-white hover:bg-[#008759] rounded-sm px-6 py-3 font-semibold transition-colors"
+    },
+    "cards": "border border-gray-200 bg-white p-6 hover:shadow-md transition-shadow rounded-sm",
+    "navigation": "Sticky top-0 z-50 bg-white border-b border-gray-200, solid background. No glassmorphism to keep it corporate.",
+    "footer": "bg-[#003B5C] text-white py-16"
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1748002388689-c62b45d5c28b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2xlYW4lMjByb29tfGVufDB8fHx8MTc4MDk0MDg1NXww&ixlib=rb-4.1.0&q=85",
+      "category": "hero",
+      "description": "Workers in protective suits inside a sterile laboratory - good for Quality Assurance or Hero."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1741900587348-72fb67190bee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxwaGFybWFjZXV0aWNhbCUyMHBhY2thZ2luZyUyMG1hY2hpbmV8ZW58MHx8fHwxNzgwOTQwODU1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "manufacturing",
+      "description": "Industrial machinery."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1745420052704-f70b1d30c8b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxwaGFybWFjZXV0aWNhbCUyMHBhY2thZ2luZyUyMG1hY2hpbmV8ZW58MHx8fHwxNzgwOTQwODU1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "manufacturing_cleanroom",
+      "description": "Worker operates machinery in a cleanroom."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1745420052527-a75fcc6aba58?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBhY2thZ2luZyUyMG1hY2hpbmV8ZW58MHx8fHwxNzgwOTQwODU1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "product_line",
+      "description": "Bottles being filled on an automated production line."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1771531072574-af6ed6b954c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwY2xlYW4lMjByb29tfGVufDB8fHx8MTc4MDk0MDg1NXww&ixlib=rb-4.1.0&q=85",
+      "category": "facility",
+      "description": "Shiny warehouse floor with overhead lights."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1617565085177-76528740191d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxhbHVtaW5pdW0lMjBmb2lsJTIwcm9sbHxlbnwwfHx8fDE3ODA5NDA4NTV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "product_foil",
+      "description": "Silver foil close-up for product category."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1617565084935-4e63d2a1b241?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxhbHVtaW5pdW0lMjBmb2lsJTIwcm9sbHxlbnwwfHx8fDE3ODA5NDA4NTV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "product_foil_alt",
+      "description": "Aluminium foil roll."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1732690233982-1d4567384ea1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHw0fHxwaGFybWFjZXV0aWNhbCUyMGxhYm9yYXRvcnl8ZW58MHx8fHwxNzgwOTQwODY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "laboratory",
+      "description": "A person in a lab coat and gloves working on a machine."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1669707041081-dd4d51943041?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMGxhYm9yYXRvcnl8ZW58MHx8fHwxNzgwOTQwODY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "quality_assurance",
+      "description": "Person in mask holding tablet in cleanroom."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1606964212858-c215029db704?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxnbG9iYWwlMjBzaGlwcGluZyUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3ODA5NDA4NjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "logistics_export",
+      "description": "Cargo containers for export markets page."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxnbG9iYWwlMjBzaGlwcGluZyUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3ODA5NDA4NjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "shipping_vessel",
+      "description": "Cargo ship for global reach section."
+    }
+  ],
+  "pages": {
+    "Home": {
+      "sections": [
+        "Hero: Deep Navy background, bold value prop ('Premium Pharmaceutical Packaging'), primary CTA 'Request Quote', industrial background image with overlay",
+        "Trust Metrics: Grid of stats (e.g., 25+ Years, 40+ Countries, 10B+ Units)",
+        "Product Showcase: Grid of 3 core products with high-quality foil imagery, 'Learn More' buttons",
+        "Industries Served: Bento grid showing Pharma, Nutraceutical, Veterinary",
+        "Manufacturing Excellence: Two-column layout with text on left and cleanroom image on right",
+        "Quality Assurance & Certifications: Logos/icons of ISO, GMP, FDA",
+        "Global Presence: Map graphic with export reach",
+        "Testimonials: Professional quotes from procurement managers",
+        "RFQ CTA: Full width banner 'Ready to upgrade your packaging?'",
+        "Footer: Corporate footer with quick links, contact info, newsletter"
+      ]
+    },
+    "About Us": {
+      "sections": [
+        "Hero",
+        "Company History Timeline",
+        "Mission & Vision",
+        "Leadership Team",
+        "Corporate Social Responsibility"
+      ]
+    },
+    "Products": {
+      "sections": [
+        "Hero",
+        "Grid of 9 products (Blister Foils, Strip Packs, Alu-Alu, etc.) with filter tabs"
+      ]
+    },
+    "Product Details": {
+      "sections": [
+        "Hero Banner",
+        "Image Gallery & Key Specs",
+        "Overview & Applications",
+        "Technical Specifications Table",
+        "Downloads (PDFs)",
+        "Certifications",
+        "Related Products",
+        "RFQ CTA"
+      ]
+    },
+    "Industries": {
+      "sections": [
+        "Hero",
+        "Pharma",
+        "Nutraceutical",
+        "Veterinary",
+        "Healthcare (with specific packaging requirements for each)"
+      ]
+    },
+    "Manufacturing": {
+      "sections": [
+        "Hero",
+        "Factory Overview",
+        "Machine Showcase",
+        "Production Capacity",
+        "Workflow/Timeline",
+        "Quality Checkpoints",
+        "Plant Gallery"
+      ]
+    },
+    "Quality Assurance": {
+      "sections": [
+        "Hero",
+        "Lab Overview",
+        "Testing Processes",
+        "Compliance"
+      ]
+    },
+    "Certifications": {
+      "sections": [
+        "Hero",
+        "Grid of Certificates with download links (ISO, GMP, FDA, etc.)"
+      ]
+    },
+    "Export Markets": {
+      "sections": [
+        "Hero",
+        "Global Map",
+        "Shipping & Logistics",
+        "International Support"
+      ]
+    },
+    "Sustainability": {
+      "sections": [
+        "Hero",
+        "Eco-friendly Materials",
+        "Recycling Initiatives",
+        "Carbon Footprint Reduction"
+      ]
+    },
+    "Blog": {
+      "sections": [
+        "Hero",
+        "Latest News",
+        "Industry Insights Grid"
+      ]
+    },
+    "Careers": {
+      "sections": [
+        "Hero",
+        "Why Join Us",
+        "Job Openings Accordion"
+      ]
+    },
+    "Contact": {
+      "sections": [
+        "Hero",
+        "Contact Form",
+        "Global Offices Grid with Map"
+      ]
+    },
+    "RFQ Portal": {
+      "sections": [
+        "Multi-step form (Step 1: Contact Info, Step 2: Product Specs, Step 3: Quantities & Uploads, Step 4: Review & Submit)"
+      ]
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. No neon, no generic purple/teal. Use Deep Navy, Steel Gray, White, and Pharmaceutical Green.",
+    "Use IBM Plex Sans for headings and Karla for body text. Install using Google Fonts.",
+    "Ensure all interactive elements have data-testid attributes (kebab-case, role-based).",
+    "Keep the UI industrial, premium, and clean. Emphasize straight lines, subtle borders, and minimal border-radius (rounded-sm or none).",
+    "Avoid standard SaaS bloat. It should look like a multi-million dollar B2B enterprise (think Siemens or GE Healthcare).",
+    "Use the provided image URLs appropriately for hero sections, products, and facilities.",
+    "Use Framer Motion for smooth enterprise-grade reveals (e.g., fade-in-up) but do not over-animate. Keep it professional.",
+    "Include Shadcn UI components but heavily customize them to match the strict corporate/industrial theme (remove excessive rounding and shadows)."
+  ]
+}
