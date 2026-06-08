@@ -11,6 +11,8 @@ import {
   CERTS,
   TESTIMONIALS,
   REGIONS,
+  PARTNERS,
+  ENGINEER_STEPS,
 } from "@/data/site";
 import SectionHeading from "@/components/SectionHeading";
 import CTABanner from "@/components/CTABanner";
@@ -198,6 +200,37 @@ export default function Home() {
         />
       </section>
 
+      {/* ============== TRUSTED BY ============== */}
+      <section className="bg-[#002840] text-white relative overflow-hidden" data-testid="home-trusted">
+        <div className="absolute inset-0 pf-dark-gradient" />
+        <div className="absolute inset-0 blueprint-grid opacity-20" />
+        <div className="relative max-w-[1400px] mx-auto px-6 py-20 lg:py-24 grid grid-cols-12 gap-10 items-start">
+          <Reveal className="col-span-12 lg:col-span-4">
+            <div className="text-xs font-mono-tech uppercase tracking-[0.3em] text-[#00A36C] mb-4 accent-bar">
+              Trusted by
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-semibold tracking-tight leading-tight">
+              Tier-1 procurement teams across 42 markets.
+            </h2>
+            <p className="mt-5 text-white/60 leading-relaxed text-sm">
+              Pharmaceutical clients audit us. They qualify us. They scale with us.
+              Below: a sample of formulators currently buying from PharmaFoil under multi-year supply agreements.
+            </p>
+          </Reveal>
+          <div className="col-span-12 lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-white/10">
+            {PARTNERS.map((p, i) => (
+              <Reveal key={p} delay={i * 0.04}>
+                <div className="bg-[#002840] h-24 flex items-center justify-center px-4 group hover:bg-[#003B5C] transition-colors">
+                  <span className="font-mono-tech text-[11px] tracking-[0.2em] text-white/60 group-hover:text-white text-center leading-tight transition-colors">
+                    {p}
+                  </span>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============== TRUST METRICS ============== */}
       <section className="bg-white border-b border-gray-200 relative" data-testid="home-metrics">
         <div className="max-w-[1400px] mx-auto px-6 py-20 lg:py-24">
@@ -322,13 +355,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============== HOW WE ENGINEER — STAIRCASE STEPS ============== */}
+      <section className="bg-white py-24 lg:py-32 relative" data-testid="home-process">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <Reveal>
+            <div className="grid grid-cols-12 gap-8 items-end mb-16">
+              <div className="col-span-12 lg:col-span-7">
+                <div className="text-xs font-mono-tech uppercase tracking-[0.3em] text-[#00A36C] mb-4 accent-bar">
+                  04 · How we engineer
+                </div>
+                <h2 className="text-3xl lg:text-5xl font-semibold text-[#003B5C] tracking-tight leading-[1.05]">
+                  Spec freeze to first commercial reel<br />
+                  <span className="text-[#00A36C]">— in fourteen weeks.</span>
+                </h2>
+              </div>
+              <div className="col-span-12 lg:col-span-5">
+                <p className="text-[#4B5563] leading-relaxed">
+                  A four-stage engineering programme that mirrors how Tier-1 pharma manufacturers actually qualify a packaging supplier. No marketing fluff – just the gates we pass before your first commercial shipment.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-px bg-gray-200">
+            {ENGINEER_STEPS.map((s, i) => (
+              <Reveal key={s.n} delay={i * 0.1}>
+                <div className={`bg-white p-8 lg:p-10 h-full relative group hover:bg-[#003B5C] transition-colors duration-500 ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#00A36C] to-[#00A36C]/0 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+                  <div className="text-[10px] font-mono-tech uppercase tracking-[0.3em] text-[#00A36C] mb-4">
+                    STAGE / {s.n}
+                  </div>
+                  <div className="text-6xl font-semibold tabular text-[#003B5C]/10 group-hover:text-white/10 mb-6 transition-colors">
+                    {s.n}
+                  </div>
+                  <h3 className="text-2xl font-semibold text-[#003B5C] group-hover:text-white tracking-tight transition-colors">{s.title}</h3>
+                  <p className="mt-3 text-sm text-[#4B5563] group-hover:text-white/70 leading-relaxed transition-colors">{s.text}</p>
+                  <div className="mt-6 pt-6 border-t border-gray-100 group-hover:border-white/10 transition-colors space-y-2">
+                    {s.detail.map((d) => (
+                      <div key={d} className="flex items-center gap-2 text-xs">
+                        <span className="w-1 h-1 bg-[#00A36C]" />
+                        <span className="text-[#4B5563] group-hover:text-white/80 transition-colors">{d}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============== INDUSTRIES — INTERACTIVE EDITORIAL ============== */}
       <section className="bg-white py-24 lg:py-32" data-testid="home-industries">
         <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
             <Reveal>
               <SectionHeading
-                eyebrow="04 · Industries Served"
+                eyebrow="05 · Industries Served"
                 title="Qualified across four regulated sectors."
                 subtitle="Our packaging is qualified, audited and trusted by formulators in highly regulated industries worldwide."
               />
@@ -372,7 +455,7 @@ export default function Home() {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <Reveal>
               <SectionHeading
-                eyebrow="05 · Manufacturing"
+                eyebrow="06 · Manufacturing"
                 title="180,000 sq.ft. engineered to pharmaceutical-grade GMP."
                 subtitle="Six production lines, two cold-form lamination lines, 32,000 sq.ft. of ISO Class 8 cleanroom – purpose-built for primary pharmaceutical packaging."
                 dark
@@ -433,7 +516,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6">
           <Reveal>
             <SectionHeading
-              eyebrow="06 · Compliance"
+              eyebrow="07 · Compliance"
               title="Audited. Certified. Documented."
               subtitle="Every roll traceable to ISO 15378 batch records. Qualified against ICH Q1A stability protocols."
             />
@@ -461,7 +544,7 @@ export default function Home() {
           <div className="lg:col-span-5">
             <Reveal>
               <SectionHeading
-                eyebrow="07 · Global Footprint"
+                eyebrow="08 · Global Footprint"
                 title="42 countries. 5 continents. One supplier."
                 subtitle="From Mumbai to Mexico City, our packaging crosses borders under formal export documentation, full COA traceability and regional regulatory dossiers."
               />

@@ -364,3 +364,72 @@ export const MANUFACTURING_STATS = [
   { label: "Annual capacity – PTP foil", value: "8,400 MT" },
   { label: "Annual capacity – Cold form", value: "4,200 MT" },
 ];
+
+export const PARTNERS = [
+  "NORDHAVEN PHARMA",
+  "WESTFIELD GENERICS",
+  "TORITSU HEALTHCARE",
+  "MERIDIAN LABS",
+  "ATLANTIC BIOSCIENCES",
+  "KAIROS THERAPEUTICS",
+  "VERDANT PHARMA",
+  "ORION FORMULATIONS",
+  "HELIOS BIOLOGICS",
+  "AURUM HEALTHCARE",
+  "SENTINEL PHARMA",
+  "PARAGON GENERICS",
+];
+
+export const ENGINEER_STEPS = [
+  {
+    n: "01",
+    title: "Specify",
+    text: "Submit your stability targets, dosage form and target markets. Our R&D desk responds within 16 hours with a barrier proposal and laminate structure.",
+    detail: ["Barrier modelling", "ICH Q1A protocol", "Substrate selection"],
+  },
+  {
+    n: "02",
+    title: "Prototype",
+    text: "We produce a 100 m sample reel against your spec for stability evaluation. Average prototype turnaround: 10 working days.",
+    detail: ["10-day turnaround", "100 m sample reel", "Pilot-scale validation"],
+  },
+  {
+    n: "03",
+    title: "Qualify",
+    text: "Three-month accelerated stability data (40°C / 75%RH) and 6-month real-time data are returned with COA, MSDS and ICH Q1A reports.",
+    detail: ["Accelerated stability", "ICH Q1A reports", "Migration testing"],
+  },
+  {
+    n: "04",
+    title: "Commercialise",
+    text: "First commercial reel ships within 14 weeks of spec freeze – under full ISO 15378 batch documentation and country-specific regulatory pack.",
+    detail: ["14-week launch", "Batch documentation", "Regulatory dossiers"],
+  },
+];
+
+export const QA_TESTS = [
+  { t: "Substrate Inspection", d: "Incoming foil thickness, temper, surface finish and pinhole density per AQL sampling.", i: "fa-solid fa-magnifying-glass-chart" },
+  { t: "WVTR / OTR Testing", d: "Mocon Permatran-W and Ox-Tran systems for moisture and oxygen barrier validation.", i: "fa-solid fa-droplet" },
+  { t: "Heat Seal Strength", d: "Instron 5944 tensile testing at multiple seal temperatures and dwell times.", i: "fa-solid fa-fire" },
+  { t: "Migration Studies", d: "USP <661>, EU 10/2011 and ICH Q3D migration testing in dedicated analytical lab.", i: "fa-solid fa-flask" },
+  { t: "Print Adhesion & COF", d: "Tape test, scratch test and coefficient-of-friction measurement on every print run.", i: "fa-solid fa-print" },
+  { t: "Stability Testing", d: "ICH Q1A long-term and accelerated stability chambers at 25°C/60%RH and 40°C/75%RH.", i: "fa-solid fa-temperature-half" },
+];
+
+export const SUSTAINABILITY_INIT = [
+  { t: "Mono-Material R&D", d: "Developing recyclable PE-based mono-material laminates for EU and Japanese markets.", i: "fa-solid fa-recycle" },
+  { t: "Solar Power", d: "1.2 MW rooftop solar array generates 34% of plant energy needs.", i: "fa-solid fa-solar-panel" },
+  { t: "Zero Liquid Discharge", d: "Closed-loop water recycling. Zero industrial effluent discharge since 2021.", i: "fa-solid fa-droplet-slash" },
+  { t: "Solventless Lamination", d: "70% of our laminates are now produced via solventless processes, eliminating VOC emissions.", i: "fa-solid fa-wind" },
+  { t: "Aluminium Recycling", d: "100% of post-industrial aluminium scrap returned to upstream smelters.", i: "fa-solid fa-rotate" },
+  { t: "Carbon Disclosure", d: "Annual reporting under CDP framework since 2022. Scope 1 + 2 verified by KPMG.", i: "fa-solid fa-chart-line" },
+];
+
+export const MACHINES = [
+  { name: "Rotogravure Printing", spec: "Up to 10 colours · 350 mpm", make: "Bobst NovaRS 4002" },
+  { name: "Solvent-less Lamination", spec: "1400 mm web · 400 mpm", make: "Nordmeccanica Super Combi" },
+  { name: "Cold-Form Lamination", spec: "OPA / Alu / PVC dry-bond", make: "Comexi Nexus L20000" },
+  { name: "Slitting & Rewinding", spec: "Tension-controlled · 600 mpm", make: "Atlas Titan SR1100" },
+  { name: "Dry Lamination", spec: "Solvent-based · 350 mpm", make: "Uflex Vega Plus" },
+  { name: "100% Inspection", spec: "Camera-based defect rejection", make: "BST eltromat ProInspector" },
+];
